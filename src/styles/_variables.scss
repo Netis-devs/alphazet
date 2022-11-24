@@ -1,0 +1,44 @@
+// main colors
+$primary-color: #fff;
+$secondary-text: #b5b5b5;
+$error-color: #d9534f;
+$body-bg: #222222;
+// Navbar
+$navbar-bg: #282828;
+// Navbar on scrool
+$navbar-scroll-bg: linear-gradient(
+  180deg,
+  rgba(27, 27, 27, 0.82) 63.26%,
+  rgba(27, 27, 27, 0) 99.34%
+);
+// Buttons
+$button-bg: #0078d7;
+$button-bg-hover: #005599;
+$partner-button: #2c2c2c;
+// Project section
+$project-button: #006dc4;
+$project-button-hover: #005599;
+$project-card-bg-hover: linear-gradient(
+    180deg,
+    rgba(43, 43, 43, 0.1) 0%,
+    rgba(20, 20, 20, 0.3) 100%
+  ),
+  url(itv-cover.png);
+
+// card
+$card-bg: #282828;
+
+
+
+
+// container
+$container-max-width:1560px;
+
+
+// Footer
+$footer-bg-color:#282828;
+$footer-title-font-size:1.5rem;
+$footer-text-font-size:1rem;
+
+
+$transition-duration:0.3s;
