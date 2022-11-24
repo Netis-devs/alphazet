@@ -4,9 +4,10 @@
     "es2021": true
   },
   "extends": [
+    "eslint:recommended",
     "plugin:react/recommended",
-    "airbnb",
-    "plugin:@next/next/recommended"
+    "prettier",
+    "next/core-web-vitals"
   ],
   "overrides": [],
   "parserOptions": {
@@ -15,24 +16,14 @@
   },
   "plugins": ["react", "prettier"],
   "rules": {
-    "arrow-body-style": "off",
     "prettier/prettier": ["error"],
-    "react/react-in-jsx-scope": "off",
-    "react/function-component-definition": "off",
-    "react/no-unescaped-entities": "off",
-    "react/prop-types": "off",
     "react/jsx-props-no-spreading": "off",
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/display-name": "off",
     "no-unused-vars": "warn",
     "no-console": "warn",
     "prefer-const": "warn",
-    "indent": [
-      "warn",
-      2,
-      {
-        "SwitchCase": 1
-      }
-    ],
     "semi": ["warn", "always"],
     "quotes": ["warn", "single"],
     "jsx-quotes": ["warn", "prefer-double"]

@@ -1,19 +1,6 @@
-const withTM = require("next-transpile-modules")([
-  "query-string",
-  "strict-uri-encode",
-  "split-on-first",
-]);
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+}
 
-module.exports = withTM({
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: [
-        {
-          loader: "@svgr/webpack",
-        },
-      ],
-    });
-    return config;
-  },
-});
+module.exports = nextConfig
