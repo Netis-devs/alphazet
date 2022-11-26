@@ -2,7 +2,7 @@ function Contact() {
   return (
     <div>
       <p>Contact</p>
-      <p>Nimadur</p>
+      <p>fuck</p>
     </div>
   );
 }
