@@ -2,7 +2,10 @@ function Contact() {
   return (
     <div>
       <p>Contact</p>
-      <p>fuck</p>
+
+      <p>bnma
+        
+      </p>
     </div>
   );
 }
