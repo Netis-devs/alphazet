@@ -1,5 +1,10 @@
-// function Contact() {
-//   return <div>Contact</div>;
-// }
+function Contact() {
+  return (
+    <div>
+      <p>Contact</p>
+      <p>Nimadur</p>
+    </div>
+  );
+}
 
-// export default Contact;
+export default Contact;
