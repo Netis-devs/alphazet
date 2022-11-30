@@ -1,0 +1,220 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M871.507 607.925c63.291-51.877 63.291-153.1 0-204.977-191.26-156.781-404.834-280.356-632.72-366.1l-41.632-15.664c-79.648-29.968-163.777 27.12-174.56 114.221-30.127 243.358-30.127 496.707-0 740.064 10.783 87.099 94.912 144.187 174.56 114.219l41.632-15.663c227.886-85.744 441.461-209.321 632.72-366.1z"
+        ],
+        "attrs": [
+          {
+            "fill": "rgb(255, 255, 255)"
+          }
+        ],
+        "width": 945,
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": ["icon-content"]
+      },
+      "attrs": [
+        {
+          "fill": "rgb(255, 255, 255)"
+        }
+      ],
+      "properties": {
+        "order": 2,
+        "id": 0,
+        "name": "play",
+        "prevSize": 24
+      },
+      "setIdx": 0,
+      "setId": 2,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
+          "M871.507 607.925c63.291-51.877 63.291-153.1 0-204.977-191.26-156.781-404.834-280.356-632.72-366.1l-41.632-15.664c-79.648-29.968-163.777 27.12-174.56 114.221-30.127 243.358-30.127 496.707-0 740.064 10.783 87.099 94.912 144.187 174.56 114.219l41.632-15.663c227.886-85.744 441.461-209.321 632.72-366.1z"
+        ],
+        "attrs": [
+          {
+            "fill": "rgb(255, 255, 255)"
+          }
+        ],
+        "width": 945,
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": ["icon-content"]
+      },
+      "attrs": [
+        {
+          "fill": "rgb(255, 255, 255)"
+        }
+      ],
+      "properties": {
+        "order": 2,
+        "id": 0,
+        "name": "play",
+        "prevSize": 24
+      },
+      "setIdx": 1,
+      "setId": 2,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
+          "M871.507 607.925c63.291-51.877 63.291-153.1 0-204.977-191.26-156.781-404.834-280.356-632.72-366.1l-41.632-15.664c-79.648-29.968-163.777 27.12-174.56 114.221-30.127 243.358-30.127 496.707-0 740.064 10.783 87.099 94.912 144.187 174.56 114.219l41.632-15.663c227.886-85.744 441.461-209.321 632.72-366.1z"
+        ],
+        "attrs": [
+          {
+            "fill": "rgb(255, 255, 255)"
+          }
+        ],
+        "width": 945,
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": ["icon-content"]
+      },
+      "attrs": [
+        {
+          "fill": "rgb(255, 255, 255)"
+        }
+      ],
+      "properties": {
+        "order": 2,
+        "id": 0,
+        "name": "play",
+        "prevSize": 24
+      },
+      "setIdx": 2,
+      "setId": 2,
+      "iconIdx": 0
+    },
+    {
+      "icon": {
+        "paths": [
+          "M503.013 71.869l-431.158 431.158 431.158 431.158",
+          "M1652.774 503.027h-1509.050"
+        ],
+        "attrs": [
+          {
+            "fill": "none",
+            "stroke": "rgb(255, 255, 255)",
+            "strokeLinejoin": "round",
+            "strokeLinecap": "round",
+            "strokeMiterlimit": "10",
+            "strokeWidth": 107.78947368421052
+          },
+          {
+            "fill": "none",
+            "stroke": "rgb(255, 255, 255)",
+            "strokeLinejoin": "round",
+            "strokeLinecap": "round",
+            "strokeMiterlimit": "10",
+            "strokeWidth": 107.78947368421052
+          }
+        ],
+        "width": 1725,
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": ["icon-content"]
+      },
+      "attrs": [
+        {
+          "fill": "none",
+          "stroke": "rgb(255, 255, 255)",
+          "strokeLinejoin": "round",
+          "strokeLinecap": "round",
+          "strokeMiterlimit": "10",
+          "strokeWidth": 107.78947368421052
+        },
+        {
+          "fill": "none",
+          "stroke": "rgb(255, 255, 255)",
+          "strokeLinejoin": "round",
+          "strokeLinecap": "round",
+          "strokeMiterlimit": "10",
+          "strokeWidth": 107.78947368421052
+        }
+      ],
+      "properties": {
+        "order": 4,
+        "id": 0,
+        "name": "icon-content",
+        "prevSize": 24
+      },
+      "setIdx": 0,
+      "setId": 4,
+      "iconIdx": 1
+    },
+    {
+      "icon": {
+        "paths": [
+          "M871.507 607.925c63.291-51.877 63.291-153.1 0-204.977-191.26-156.781-404.834-280.356-632.72-366.1l-41.632-15.664c-79.648-29.968-163.777 27.12-174.56 114.221-30.127 243.358-30.127 496.707-0 740.064 10.783 87.099 94.912 144.187 174.56 114.219l41.632-15.663c227.886-85.744 441.461-209.321 632.72-366.1z"
+        ],
+        "attrs": [
+          {
+            "fill": "rgb(255, 255, 255)"
+          }
+        ],
+        "width": 945,
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": ["icon-content"]
+      },
+      "attrs": [
+        {
+          "fill": "rgb(255, 255, 255)"
+        }
+      ],
+      "properties": {
+        "order": 2,
+        "id": 0,
+        "name": "play",
+        "prevSize": 24
+      },
+      "setIdx": 2,
+      "setId": 2,
+      "iconIdx": 0
+    }
+  ],
+  "height": 1024,
+  "preferences": {
+    "showGlyphs": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "icon-",
+      "metadata": {
+        "fontFamily": "icomoon"
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false
+    },
+    "imagePref": {
+      "prefix": "icon-",
+      "png": true,
+      "useClassSelector": true,
+      "color": 0,
+      "bgColor": 16777215,
+      "classSelector": ".icon",
+      "name": "icomoon",
+      "autoHost": true
+    },
+    "historySize": 50,
+    "showCodes": true,
+    "gridSize": 16,
+    "quickUsageToken": {}
+  }
+}

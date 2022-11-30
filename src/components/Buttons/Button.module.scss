@@ -25,4 +25,12 @@
   &:hover {
     background-color: $project-button-hover;
   }
+  &.project {
+    @include text-styles($height: 2.5rem, $weight: 700, $size: 2rem);
+    background-color: transparent;
+    color: $secondary-text;
+  }
+  &.project:hover {
+    color: $text-color;
+  }
 }

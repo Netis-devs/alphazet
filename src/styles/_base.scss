@@ -2,7 +2,7 @@
 @import "@/styles/variables";
 
 :root {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 *,
@@ -23,6 +23,8 @@ body{
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
     box-sizing: border-box;
+    background-color:$body-bg;
+    color: $text-color;
     
 }
 
