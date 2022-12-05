@@ -1,4 +1,4 @@
-@import '../.././styles/common';
+@import '@/styles/common';
 
 .buttonBase {
   &.primary {
@@ -9,10 +9,11 @@
     padding: 0.938rem 2.25rem;
     transition: all $transition-duration;
     border-radius: $border-radius;
+    &:hover {
+      background-color: $button-bg-hover;
+    }
   }
-  &:hover {
-    background-color: $button-bg-hover;
-  }
+
   &.secondary {
     @include text-styles($height: 1.125rem);
     @include flex($x: center, $y: center);
@@ -21,16 +22,17 @@
     padding: 0.5rem 1rem;
     transition: all $transition-duration;
     border-radius: $border-radius;
+    &:hover {
+      background-color: $project-button-hover;
+    }
   }
-  &:hover {
-    background-color: $project-button-hover;
-  }
+
   &.project {
     @include text-styles($height: 2.5rem, $weight: 700, $size: 2rem);
     background-color: transparent;
     color: $secondary-text;
-  }
-  &.project:hover {
-    color: $text-color;
+    &:hover {
+      color: $text-color;
+    }
   }
 }

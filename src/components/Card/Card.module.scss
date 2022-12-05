@@ -1,4 +1,4 @@
-@import '../../styles/common';
+@import '@/styles/common';
 
 .cardBase {
   position: relative;
@@ -12,6 +12,23 @@
   margin-bottom: 0;
   margin-left: 0;
   overflow: hidden;
+  
+ svg{
+  path{
+    transition: all $transition-duration;
+  }
+ }
+  &:hover {
+    svg {
+      path {
+        fill: #0078d7;
+      }
+    }
+  }
+  &:hover.imgBase {
+    bottom: -10px;
+    right: -10px;
+  }
 }
 .imgBase {
   position: inherit;
@@ -22,17 +39,11 @@
   height: 22.5rem;
   transition: all $transition-duration;
 }
-.card__corner {
+.carCorner {
   transition: all $transition-duration;
   position: absolute;
   border-radius: 0 0 0 1.25rem;
   bottom: 0;
   left: 0;
-}
-.cardBase:hover .card__corner {
-  fill: #0078d7;
-}
-.cardBase:hover .imgBase {
-  bottom: -10px;
-  right: -10px;
+  fill: red;
 }

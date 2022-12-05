@@ -1,4 +1,4 @@
-@import '../../styles/common';
+@import '@/styles/common';
 
 .baseStyles {
   @include flex($x: center, $y: center);
@@ -18,7 +18,7 @@
     width: 100%;
     padding: 1.25rem 4.375rem;
     background-color: $partner-button;
-    border-radius:0.75rem;
+    border-radius: 0.75rem;
   }
   &:hover {
     background-color: $partner-button-hover;

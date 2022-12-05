@@ -1,6 +1,7 @@
 import Link from 'next/link';
-import styles from '@/components/Buttons/Button.module.scss';
 import cn from 'classnames';
+
+import styles from '@/components/Buttons/Button.module.scss';
 
 const Button = (props) => {
   const {

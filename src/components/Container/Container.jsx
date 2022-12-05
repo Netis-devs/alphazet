@@ -1,6 +1,7 @@
 import React from 'react';
-import styles from '@/components/Container/Container.module.scss';
 import cn from 'classnames';
+
+import styles from '@/components/Container/Container.module.scss';
 
 const Container = (props) => {
   const { className } = props;

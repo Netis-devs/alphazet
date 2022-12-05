@@ -38,7 +38,10 @@ function Contact() {
             </p>
           </div>
         </Card>
-        <ProjectCard href="#" src={cardProject} alt="card"></ProjectCard>
+        <div className="flex">
+          <ProjectCard href="#" src={cardProject} alt="card"></ProjectCard>
+          <ProjectCard href="#" src={cardProject} alt="card"></ProjectCard>
+        </div>
       </Container>
     </div>
   );

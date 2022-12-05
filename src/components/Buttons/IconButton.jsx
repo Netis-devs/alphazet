@@ -1,8 +1,9 @@
 import React from 'react';
-import Link from 'next/link';
 import cn from 'classnames';
-import styles from '@/components/Buttons/IconButton.module.scss';
 import Icon from '@/icons';
+import Link from 'next/link';
+
+import styles from '@/components/Buttons/IconButton.module.scss';
 
 const IconButton = React.forwardRef((props, ref) => {
   const {
