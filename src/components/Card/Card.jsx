@@ -1,5 +1,6 @@
 import cn from 'classnames';
 import Image from 'next/image';
+
 import CardCornerSVG from '@/assets/icons/card-corner.svg';
 
 import styles from '@/components/Card/Card.module.scss';

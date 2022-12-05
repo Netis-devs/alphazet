@@ -12,7 +12,7 @@ function Contact() {
   return (
     <div>
       <Container>
-        <Button as="button" variant="project">
+        <Button as="button" variant="primary">
           bnma
         </Button>
         <IconButton
@@ -22,7 +22,7 @@ function Contact() {
           variant="socials"
         ></IconButton>
         <IconButton as="a" href="google.com" variant="analize">
-          <Image src={img} height={70} alt="icon" />
+          <Image src={img} height={70} width={60} alt="icon" />
         </IconButton>
         <Container />
         <p>Contact</p>

@@ -12,22 +12,23 @@
   margin-bottom: 0;
   margin-left: 0;
   overflow: hidden;
-  
- svg{
-  path{
-    transition: all $transition-duration;
+
+  &:hover .imgBase {
+    bottom: -10px;
+    right: -10px;
   }
- }
+
+  svg {
+    path {
+      transition: all $transition-duration;
+    }
+  }
   &:hover {
     svg {
       path {
         fill: #0078d7;
       }
     }
-  }
-  &:hover.imgBase {
-    bottom: -10px;
-    right: -10px;
   }
 }
 .imgBase {
@@ -45,5 +46,4 @@
   border-radius: 0 0 0 1.25rem;
   bottom: 0;
   left: 0;
-  fill: red;
 }

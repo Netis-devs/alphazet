@@ -9,20 +9,22 @@
     background-color: $partner-button;
     border-radius: $border-radius;
     transition: all $transition-duration;
+    &:hover {
+      background-color: $partner-button-hover;
+    }
   }
-  &:hover {
-    background-color: $partner-button-hover;
-  }
+
   &.partners {
     max-width: 15rem;
     width: 100%;
     padding: 1.25rem 4.375rem;
     background-color: $partner-button;
     border-radius: 0.75rem;
+    &:hover {
+      background-color: $partner-button-hover;
+    }
   }
-  &:hover {
-    background-color: $partner-button-hover;
-  }
+
   &.analize {
     width: 5.25rem;
     height: 5.25rem;
