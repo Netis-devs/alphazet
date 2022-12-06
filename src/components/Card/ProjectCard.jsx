@@ -13,7 +13,14 @@ const ProjectButton = (props) => {
   return (
     <div className={classes}>
       <Link href={href} prefetch={false} {...rest}>
-        <Image className={styles.card__img} src={src} alt={alt} />
+        {src && (
+          <Image
+            className={styles.card__img}
+            placeholder="blur"
+            src={src}
+            alt={alt}
+          />
+        )}
         <div>{children}</div>
         <div className={styles.shadow}></div>
       </Link>

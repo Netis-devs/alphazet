@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import IconButton from '@/components/Buttons/IconButton';
 import Button from '@/components/Buttons/Button';
 import Container from '@/components/Container';
@@ -5,13 +7,15 @@ import example from '@/assets/images/miniimg.png';
 import cardProject from '@/assets/images/cards-project.png';
 import Card from '@/components/Card/Card';
 import img from '@/assets/icons/image 1.svg';
-import Image from 'next/image';
 import ProjectCard from '@/components/Card/ProjectCard';
+import Footer from '@/components/Footer/Footer';
+import Navbar from '@/components/Navbar/Navbar';
 
 function Contact() {
   return (
     <div>
       <Container>
+        <Navbar />
         <Button as="button" variant="primary">
           bnma
         </Button>
@@ -43,6 +47,7 @@ function Contact() {
           <ProjectCard href="#" src={cardProject} alt="card"></ProjectCard>
         </div>
       </Container>
+      <Footer />
     </div>
   );
 }
