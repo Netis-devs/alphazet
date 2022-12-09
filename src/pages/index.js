@@ -1,5 +1,6 @@
+import HomeView from '@/views/HomeView';
 function Index() {
-  return <h1>Hello world</h1>;
+  return <HomeView />;
 }
 
 export default Index;

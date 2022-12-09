@@ -20,7 +20,7 @@ const Card = (props) => {
   return (
     <div className={classes} {...rest}>
       {children}
-      {src && <Image className={imgClasses} src={src} alt={alt}></Image>}
+      {src && <Image className={imgClasses} src={src} alt={alt} />}
       <CardCornerSVG className={styles.carCorner} />
     </div>
   );
