@@ -141,20 +141,6 @@ function HomeView() {
         <Container>
           <h2 className={styles.cardHeading}>Отзывы</h2>
         </Container>
-        <swiper>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis error
-          voluptatibus facere. Magnam pariatur suscipit nisi accusantium
-          corporis recusandae incidunt assumenda quo quis facere amet ea
-          possimus laborum dolorum sint placeat in et asperiores esse ullam
-          delectus, impedit optio earum? Obcaecati hic voluptates voluptas eaque
-          incidunt, nemo aut consequuntur, quod architecto totam optio
-          consectetur odio laborum in error blanditiis. Non nam sed harum natus
-          voluptates sequi est, facilis tenetur libero explicabo animi,
-          recusandae debitis laudantium voluptatem quod fugit fugiat ducimus
-          minima quam saepe? Tenetur, deleniti dignissimos dolorum ea
-          reprehenderit minima ex sit sunt ducimus voluptatem recusandae
-          exercitationem excepturi nisi! Ea.
-        </swiper>
       </div>
       <Footer />
     </div>

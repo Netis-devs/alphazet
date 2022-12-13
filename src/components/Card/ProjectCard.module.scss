@@ -6,12 +6,31 @@
   // width: 100%;
   border-radius: 1.25rem;
   height: 29.25rem;
+  z-index: 99;
 
   &:hover {
     .shadow {
       opacity: 1;
+      z-index: 99;
     }
   }
+}
+.projectButton {
+  position: absolute;
+  top: 2.25rem;
+  left: 3rem;
+}
+.projectInfo {
+  position: absolute;
+  bottom: 2.25rem;
+  left: 3rem;
+}
+.projectTitle {
+  z-index: 1000;
+  @include text-styles($height: 2.5rem, $weight: 600, $size: 2.25rem);
+}
+.projectText {
+  @include text-styles($height: 1.25rem, $weight: 400, $size: 1.75rem);
 }
 
 .card__img {

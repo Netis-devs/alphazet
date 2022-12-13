@@ -161,22 +161,3 @@ export const iconButton = [
     src: Apelsin,
   },
 ]; // it comes from backend like partners
-
-export const icons = [
-  {
-    id: 1,
-    Element: InstagramSVG,
-  },
-  {
-    id: 2,
-    Element: TelegramSVG,
-  },
-  {
-    id: 3,
-    Element: YouTubeSVG,
-  },
-  {
-    id: 4,
-    Element: FacebookSVG,
-  },
-]; // social icons it is static data set

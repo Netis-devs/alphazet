@@ -14,6 +14,10 @@
 
   @include flex($x: center, $y: space-between);
 }
+.navbarLeft {
+  max-width: 13.25rem;
+  width: 100%;
+}
 .navbarList {
   @include flex($x: center, $y: space-between);
 }
@@ -26,5 +30,23 @@
   color: $secondary-text;
   &:hover {
     color: $text-color;
+  }
+}
+@media (max-width: 992px) {
+  .navbarCenter {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    @include flex($x: center, $y: center);
+  }
+  .navbarLeft {
+    margin: 0 auto;
+    max-width: 9.938rem;
+    width: 100%;
+  }
+  .navbarRight {
+    display: none;
   }
 }
