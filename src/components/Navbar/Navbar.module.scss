@@ -1,0 +1,52 @@
+@import '@/styles/common';
+.nav {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(27, 27, 27, 0.82) 63.26%,
+    rgba(27, 27, 27, 0) 99.34%
+  );
+}
+.navbar {
+  padding: 0.75rem 0;
+
+  @include flex($x: center, $y: space-between);
+}
+.navbarLeft {
+  max-width: 13.25rem;
+  width: 100%;
+}
+.navbarList {
+  @include flex($x: center, $y: space-between);
+}
+.navbarItem {
+  margin-right: 2.5rem;
+}
+.navbarLink {
+  transition: all $transition-duration;
+  @include text-styles($height: 1.625rem, $size: 1.125rem);
+  color: $secondary-text;
+  &:hover {
+    color: $text-color;
+  }
+}
+@media (max-width: 992px) {
+  .navbarCenter {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    @include flex($x: center, $y: center);
+  }
+  .navbarLeft {
+    margin: 0 auto;
+    max-width: 9.938rem;
+    width: 100%;
+  }
+  .navbarRight {
+    display: none;
+  }
+}

@@ -1,0 +1,24 @@
+.projectButtons {
+  padding-top: 5rem;
+}
+.projectNavbar {
+  padding-bottom: 5rem;
+}
+.projectButton {
+  margin-right: 3.5rem;
+}
+.projectLinks {
+  margin: 3.75rem 0;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(36.75rem, 1fr));
+}
+@media (max-width:1200px){
+  .projectButtons {
+    padding-top: 1.25rem;
+  }
+  .projectLinks {
+    margin: 3rem 0;
+
+  }
+}
