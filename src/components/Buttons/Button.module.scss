@@ -1,0 +1,46 @@
+@import '@/styles/common';
+
+.buttonBase {
+  &.primary {
+    @include text-styles($height: 1.625rem);
+    @include flex($x: center, $y: center);
+    background-color: $button-bg;
+    color: $text-color;
+    padding: 0.938rem 2.25rem;
+    transition: all $transition-duration;
+    border-radius: $border-radius;
+    &:hover {
+      background-color: $button-bg-hover;
+    }
+  }
+
+  &.secondary {
+    @include text-styles($height: 1.125rem);
+    @include flex($x: center, $y: center);
+    background-color: $project-button;
+    color: $text-color;
+    padding: 0.5rem 1rem;
+    transition: all $transition-duration;
+    border-radius: $border-radius;
+    &:hover {
+      background-color: $project-button-hover;
+    }
+  }
+
+  &.project {
+    @include text-styles($height: 2.5rem, $weight: 700, $size: 2rem);
+    background-color: transparent;
+    color: $secondary-text;
+    transition: all $transition-duration;
+    &:hover {
+      color: $text-color;
+    }
+  }
+}
+@media (max-width:1200px){
+  .buttonBase {
+    &.project{
+      @include text-styles($height: 2rem, $weight: 600, $size: 1.5rem);
+    }
+}
+}
