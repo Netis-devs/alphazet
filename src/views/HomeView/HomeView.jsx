@@ -41,7 +41,7 @@ const socialIcons = [
 function HomeView() {
   return (
     <div>
-      <Header src={video} alt="egeg">
+      <Header src={video} alt="video">
         <div className={styles.headerCenter}>
           <div className={styles.headerFlex}>
             <h1 className={styles.headerTitle}>
