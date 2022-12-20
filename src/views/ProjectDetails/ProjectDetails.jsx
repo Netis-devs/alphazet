@@ -182,7 +182,7 @@ const HomeDetails = () => {
             На следующих этапах на основе всего анализа мы разработали структуру
             программы и подготовили скетч-версию
           </p>
-          <Image src={ProccesImg} width={1500}  />
+          <Image src={ProccesImg} width={1500} />
         </Container>
       </div>
       <div className={styles.sketch}>

@@ -61,7 +61,7 @@
   background-color: $card-bg;
 }
 .googleAppsInner {
-  max-width: 80rem;
+  max-width: 70rem;
   width: 100%;
   margin: 0 auto;
   @include flex($x: center, $y: space-between);
