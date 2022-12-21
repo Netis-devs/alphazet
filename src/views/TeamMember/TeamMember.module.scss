@@ -1,0 +1,55 @@
+@import '@/styles/common';
+.teamInfo {
+  bottom: 10%;
+  position: absolute;
+}
+.teamTitle {
+  margin-bottom: 0.75rem;
+  @include text-styles($size: 3rem, $weight: 700, $height: 3.5rem);
+}
+.teamText {
+  @include text-styles($size: 1.5rem, $weight: 400, $height: 2rem);
+}
+.teamInfoInner {
+  margin-top: 2.25rem;
+  @include flex($x: center, $y: space-between);
+}
+.teamSecondText {
+  @include text-styles($size: 1rem, $weight: 400, $height: 1.5rem);
+}
+.second {
+  margin-left: 2.25rem;
+}
+.span {
+  margin-right: 0.5rem;
+  content: '';
+  border-radius: 50%;
+  background: #5cb85c;
+  width: 14px;
+  height: 14px;
+}
+.projects {
+  margin: 5rem 0;
+}
+.teamProjectTitle {
+  margin-bottom: 3rem;
+  @include text-styles($size: 2.5rem, $weight: 700, $height: 3rem);
+}
+.projectButton {
+  margin-right: 3.5rem;
+}
+.projectLinks {
+  margin: 3.75rem 0;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(36.75rem, 1fr));
+}
+
+@media (max-width: 1200px) {
+  .projectButtons {
+    padding-top: 1.25rem;
+  }
+  .projectLinks {
+    margin: 3rem 0;
+  }
+}

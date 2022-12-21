@@ -1,14 +1,24 @@
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 import Button from '@/components/Buttons/Button';
 import NavbarLogo from '@/assets/icons/alphazet-logo.svg';
+import { useState, useEffect } from 'react';
 import Container from '@/components/Container/Container';
 
 import styles from '@/components/Navbar/Navbar.module.scss';
 
 const Navbar = () => {
+  // window.onscroll = function (evt) {
+  //   let windowTop = evt.target.documentElement.scrollTop;
+  //   if (windowTop > 10) {
+  //     navBackground.style.backgroundColor = '#fff';
+  //     navBackground.style.boxShadow = '0px 5px 20px rgba(45, 45, 45, 0.1)';
+  //   } else {
+  //     navBackground.style.backgroundColor = 'transparent';
+  //     navBackground.style.boxShadow = '0px 0px 0px transparent';
+  //   }
+  // };
   return (
     <div className={styles.nav}>
       <Container>
