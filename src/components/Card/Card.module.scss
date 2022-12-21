@@ -1,0 +1,49 @@
+@import '@/styles/common';
+
+.cardBase {
+  position: relative;
+  @include flex($x: center, $y: space-around);
+  padding: 0 4.25rem 0 7.5rem;
+  // max-width: 97.5rem;
+  // width: 100%;
+  background-color: $navbar-bg;
+  transition: all $transition-duration;
+  border-radius: 1.25rem;
+  margin-bottom: 0;
+  margin-left: 0;
+  overflow: hidden;
+
+  &:hover .imgBase {
+    bottom: -10px;
+    right: -10px;
+  }
+
+  svg {
+    path {
+      transition: all $transition-duration;
+    }
+  }
+  &:hover {
+    svg {
+      path {
+        fill: #0078d7;
+      }
+    }
+  }
+}
+.imgBase {
+  position: inherit;
+  bottom: 0;
+  right: 0.313rem;
+  max-width: 27.5rem;
+  width: 100%;
+  height: 22.5rem;
+  transition: all $transition-duration;
+}
+.carCorner {
+  transition: all $transition-duration;
+  position: absolute;
+  border-radius: 0 0 0 1.25rem;
+  bottom: 0;
+  left: 0;
+}
