@@ -27,6 +27,10 @@
     color: $text-color;
   }
 }
+.active {
+  color: $text-color;
+  @include text-styles($height: 1.625rem, $size: 1.125rem);
+}
 @media (max-width: 992px) {
   .navbarCenter {
     display: none;

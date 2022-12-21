@@ -1,14 +1,16 @@
 import React from 'react';
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 import Button from '@/components/Buttons/Button';
 import NavbarLogo from '@/assets/icons/alphazet-logo.svg';
-import { useState, useEffect } from 'react';
 import Container from '@/components/Container/Container';
 
 import styles from '@/components/Navbar/Navbar.module.scss';
 
 const Navbar = () => {
+  const router = useRouter();
   // window.onscroll = function (evt) {
   //   let windowTop = evt.target.documentElement.scrollTop;
   //   if (windowTop > 10) {
@@ -29,17 +31,38 @@ const Navbar = () => {
           <div className={styles.navbarCenter}>
             <ul className={styles.navbarList}>
               <li className={styles.navbarItem}>
-                <Link className={styles.navbarLink} href="/projects">
+                <Link
+                  className={
+                    router.pathname === '/projects'
+                      ? styles.active
+                      : styles.navbarLink
+                  }
+                  href="/projects"
+                >
                   Проекты
                 </Link>
               </li>
               <li className={styles.navbarItem}>
-                <Link className={styles.navbarLink} href="/about">
+                <Link
+                  className={
+                    router.pathname === '/about'
+                      ? styles.active
+                      : styles.navbarLink
+                  }
+                  href="/about"
+                >
                   О нас
                 </Link>
               </li>
               <li className={styles.navbarItem}>
-                <Link className={styles.navbarLink} href="/vakansiya">
+                <Link
+                  className={
+                    router.pathname === '/vakansiya'
+                      ? styles.active
+                      : styles.navbarLink
+                  }
+                  href="/vakansiya"
+                >
                   Вакансии
                 </Link>
               </li>
