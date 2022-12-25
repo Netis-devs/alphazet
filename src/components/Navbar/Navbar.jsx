@@ -57,11 +57,11 @@ const Navbar = () => {
               <li className={styles.navbarItem}>
                 <Link
                   className={
-                    router.pathname === '/vakansiya'
+                    router.pathname === '/vacation'
                       ? styles.active
                       : styles.navbarLink
                   }
-                  href="/vakansiya"
+                  href="/vacation"
                 >
                   Вакансии
                 </Link>

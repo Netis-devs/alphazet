@@ -144,7 +144,6 @@ const partnerIcons = [
   },
 ];
 
-
 const HomeDetails = () => {
   return (
     <div>
