@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import Navbar from '@/components/Navbar/Navbar';
 import Container from '@/components/Container';
 import Footer from '@/components/Footer/Footer';
@@ -325,13 +327,20 @@ const data = [
 ];
 
 const VacationView = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
   return (
     <div>
       <Navbar />
       <Container>
         <div className={styles.vocation}>
-          {data.map((item) => (
-            <VacationCard key={item.id} data={item} />
+          {data.map((item, index) => (
+            <VacationCard
+              key={item.id}
+              index={index}
+              activeIndex={activeIndex}
+              onClick={() => setActiveIndex(index)}
+              data={item}
+            />
           ))}
         </div>
       </Container>

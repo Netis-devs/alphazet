@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+
 import styles from '@/components/Vacation/Vacation.module.scss';
 
 const SubContent = React.forwardRef(({ data }, ref) => {
@@ -17,26 +18,36 @@ const SubContent = React.forwardRef(({ data }, ref) => {
   );
 });
 
-const Vacation = ({ data }) => {
+const Vacation = ({ data, index, onClick, activeIndex }) => {
   const { title, Src, office, details } = data;
   const contentRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
   const [height, setHeight] = useState(0);
+  const shouldOpen = useRef(false);
 
   useEffect(() => {
+    shouldOpen.current = activeIndex === index && isOpen;
     if (contentRef.current) {
-      setHeight(() => (isOpen ? contentRef.current.offsetHeight : 0));
+      setHeight(() =>
+        shouldOpen.current ? contentRef.current.offsetHeight : 0
+      );
     }
-  }, [height, isOpen]);
-  const handleClick = () => {
+  }, [isOpen, index, activeIndex]);
+
+  function handleClick() {
     setIsOpen((p) => !p);
-  };
+    onClick();
+  }
   return (
     <div onClick={handleClick} className={styles.vocation}>
       <div className={styles.vocationInner}>
         <h3 className={styles.vacationText}>{title}</h3>
         <p className={styles.vacationSecondText}>{office}</p>
-        <Src className={isOpen ? styles.vacationRotate : styles.vacationImg} />
+        <Src
+          className={
+            shouldOpen.current ? styles.vacationRotate : styles.vacationImg
+          }
+        />
       </div>
       <div style={{ height }} className={styles.content}>
         {details.map((item) => (
