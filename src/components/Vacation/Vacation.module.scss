@@ -1,0 +1,47 @@
+@import '@/styles/common';
+.vocation {
+  background-color: $navbar-bg;
+  border-radius: 1.25rem;
+}
+.vocationInner {
+  z-index: 1;
+  padding: 3.5rem 4rem;
+  margin-top: 0.75rem;
+  box-shadow: 0px 5px 10px 5px #222222;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  border-radius: 1.25rem;
+}
+.vacationText {
+  @include text-styles($size: 1.5rem, $weight: 500, $height: 2rem);
+}
+.vacationSecondText {
+  @include text-styles($size: 1.25rem, $weight: 500, $height: 1.75rem);
+}
+.vacationImg {
+  transition: all 0.3s;
+  display: flex;
+  justify-self: end;
+
+  &.active {
+    transition: all 0.3s;
+    display: flex;
+    justify-self: end;
+    transform: rotate(180deg);
+  }
+}
+
+.content {
+  overflow: hidden;
+  border-radius: 0 0 1.25rem 1.25rem;
+  transition: height 0.3s;
+}
+.contentInner {
+  padding: 2.25rem 4rem;
+
+  // padding-top: 2.25rem;
+}
+.contentItem {
+  margin-top: 0.625rem;
+}
