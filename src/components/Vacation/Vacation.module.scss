@@ -23,18 +23,19 @@
   transition: all 0.3s;
   display: flex;
   justify-self: end;
+
+  &.active {
+    transition: all 0.3s;
+    display: flex;
+    justify-self: end;
+    transform: rotate(180deg);
+  }
 }
 
-.vacationRotate {
-  transition: all 0.3s;
-  display: flex;
-  justify-self: end;
-  transform: rotate(180deg);
-}
 .content {
   overflow: hidden;
-  transition: all 0.3s;
   border-radius: 0 0 1.25rem 1.25rem;
+  transition: height 0.3s;
 }
 .contentInner {
   padding: 2.25rem 4rem;

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import Navbar from '@/components/Navbar/Navbar';
 import Container from '@/components/Container';
@@ -328,6 +328,16 @@ const data = [
 
 const VacationView = () => {
   const [activeIndex, setActiveIndex] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = (index) => {
+    setActiveIndex(index);
+    setIsOpen(true);
+    if (isOpen && index === activeIndex) {
+      setIsOpen(false);
+    }
+  };
+
   return (
     <div>
       <Navbar />
@@ -336,9 +346,9 @@ const VacationView = () => {
           {data.map((item, index) => (
             <VacationCard
               key={item.id}
-              index={index}
-              activeIndex={activeIndex}
-              onClick={() => setActiveIndex(index)}
+              isActive={activeIndex === index}
+              isOpen={isOpen}
+              onClick={() => handleClick(index)}
               data={item}
             />
           ))}
