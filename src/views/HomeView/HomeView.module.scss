@@ -79,7 +79,7 @@
   }
   .partners {
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(8.25rem, 1fr));
   }
   .partner {
     margin: 3.25rem 0;
@@ -88,11 +88,5 @@
     margin-top: 2rem;
     margin-bottom: 1.5rem;
     @include text-styles($size: 1.5rem, $weight: 700, $height: 2rem);
-  }
-}
-@media (max-width: 576px){
-  .partners {
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(8.25rem, 1fr));
   }
 }

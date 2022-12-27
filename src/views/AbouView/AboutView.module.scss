@@ -58,6 +58,7 @@
 }
 .aboutContactInner {
   @include flex($x: center, $y: space-between);
+  margin-bottom: 2rem;
 }
 .contactText {
   margin-bottom: 0.5rem;
@@ -82,4 +83,10 @@
   display: grid;
   gap: 1.375rem;
   grid-template-columns: repeat(auto-fit, minmax(14.5rem, 1fr));
+}
+@media (max-width: 576px) {
+  .partners {
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(8.25rem, 1fr));
+  }
 }

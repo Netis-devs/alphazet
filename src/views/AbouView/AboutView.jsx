@@ -1,12 +1,12 @@
+import Image from 'next/image';
+
 import Container from '@/components/Container';
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
 import IconButton from '@/components/Buttons/IconButton';
-import Image from 'next/image';
+import YandexMap from '@/components/YandexMap/YandexMap';
 
-import TriangleImg from '@/assets/images/triangleImg.png';
 import VideoImg from '@/assets/images/video.png';
-import MapImg from '@/assets/images/mapImg.png';
 import Apelsin from '@/assets/icons/apelsin.png';
 
 import styles from '@/views/AbouView/AboutView.module.scss';
@@ -134,7 +134,7 @@ const AboutView = () => {
               </p>
             </div>
           </div>
-          <Image className={styles.mapImg} src={MapImg} />
+          <YandexMap className={styles.mapImg} />
         </div>
         <div className={styles.aboutProjects}>
           <h2 className={styles.contactTitle}>Партнёры</h2>
