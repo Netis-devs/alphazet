@@ -2,7 +2,9 @@ import Container from '@/components/Container';
 import Header from '@/components/Header/Header';
 import IconButton from '@/components/Buttons/IconButton';
 import Footer from '@/components/Footer/Footer';
+import OurSwiper from '@/components/OurComandSwiper/OurComandSwiper';
 import Image from 'next/image';
+import ProjectSwiper from '@/views/ProjectDetails/ProjectSwiper/ProjectSwiper';
 
 import TashBusImg from '@/assets/images/tashbus.png';
 import SketchFirstImg from '@/assets/images/sketch1.png';
@@ -159,11 +161,12 @@ const HomeDetails = () => {
           </div>
           <TashbusSvg />
         </div>
-        <div className={styles.recsycle}>
-          <p className={styles.resycleText}>
-            Во-первых, мы исследовали и проанализировали аналогичные программы в
-            стране и за рубежом
-          </p>
+      </Container>
+      <div className={styles.recsycle}>
+        <ProjectSwiper />
+      </div>
+      <div className={styles.rysycle}>
+        <Container>
           <div className={styles.projectPartners}>
             {partnerIcons.map((item) => {
               const { Element, id } = item;
@@ -174,10 +177,6 @@ const HomeDetails = () => {
               );
             })}
           </div>
-        </div>
-      </Container>
-      <div className={styles.rysycle}>
-        <Container>
           <p className={styles.resycleText}>
             На следующих этапах на основе всего анализа мы разработали структуру
             программы и подготовили скетч-версию
@@ -253,7 +252,13 @@ const HomeDetails = () => {
           alt="leftCorner"
         />
       </div>
-      <Footer></Footer>
+      <div className={styles.ourSwiper}>
+        <Container>
+          <h3 className={styles.ourSwiperTitle}>Участники проекта</h3>
+        </Container>
+        <OurSwiper />
+      </div>
+      <Footer />
     </div>
   );
 };

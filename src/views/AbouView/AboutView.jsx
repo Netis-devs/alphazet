@@ -1,10 +1,12 @@
+import Image from 'next/image';
+
 import Container from '@/components/Container';
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
 import IconButton from '@/components/Buttons/IconButton';
-import Image from 'next/image';
+import ReviewSwiper from '@/components/ReviewSwiper/ReviewSwiper';
+import OurSwiper from '@/components/OurComandSwiper/OurComandSwiper';
 
-import TriangleImg from '@/assets/images/triangleImg.png';
 import VideoImg from '@/assets/images/video.png';
 import MapImg from '@/assets/images/mapImg.png';
 import Apelsin from '@/assets/icons/apelsin.png';
@@ -136,6 +138,15 @@ const AboutView = () => {
           </div>
           <Image className={styles.mapImg} src={MapImg} />
         </div>
+      </Container>
+      <div className={styles.ourComandSwiper}>
+        <Container>
+          <h2 className={styles.contactTitle}>Наша команда</h2>
+        </Container>
+        <OurSwiper />
+      </div>
+
+      <Container>
         <div className={styles.aboutProjects}>
           <h2 className={styles.contactTitle}>Партнёры</h2>
           <div className={styles.partners}>
@@ -153,6 +164,14 @@ const AboutView = () => {
           </div>
         </div>
       </Container>
+      <div className={styles.reviewSwiper}>
+        <Container>
+          <h2 className={`${styles.contactTitle} ${styles.contactSecondTitle}`}>
+            Отзывы
+          </h2>
+        </Container>
+        <ReviewSwiper />
+      </div>
       <Footer />
     </div>
   );

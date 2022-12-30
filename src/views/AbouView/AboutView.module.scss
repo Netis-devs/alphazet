@@ -77,9 +77,18 @@
 .aboutProjects {
   margin: 2rem 0;
 }
+.ourComandSwiper {
+  margin-bottom: 5rem;
+}
 .partners {
   margin: 2rem 0;
   display: grid;
   gap: 1.375rem;
   grid-template-columns: repeat(auto-fit, minmax(14.5rem, 1fr));
+}
+.contactSecondTitle {
+  margin-bottom: 2.5rem;
+}
+.reviewSwiper {
+  margin-bottom: 5rem;
 }

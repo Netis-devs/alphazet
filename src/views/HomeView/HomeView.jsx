@@ -8,6 +8,7 @@ import Footer from '@/components/Footer/Footer';
 import Header from '@/components/Header/Header';
 import ShortAbout from '@/components/ShortAbout/ShortAbout';
 import Container from '@/components/Container';
+import ReviewSwiper from '@/components/ReviewSwiper/ReviewSwiper';
 
 import video from '@/assets/images/hero-video-bg.png';
 import TelegramSVG from '@/assets/icons/telegram.svg';
@@ -141,6 +142,7 @@ function HomeView() {
         <Container>
           <h2 className={styles.cardHeading}>Отзывы</h2>
         </Container>
+        <ReviewSwiper />
       </div>
       <Footer />
     </div>

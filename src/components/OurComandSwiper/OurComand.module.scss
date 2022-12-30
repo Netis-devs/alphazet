@@ -1,0 +1,55 @@
+@import '@/styles/common';
+.ourSwiper {
+  position: relative;
+  margin-top: 2.5rem;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s;
+
+  &:hover {
+    .ourSwiperImg {
+      opacity: 0.5;
+    }
+    .ourTitle {
+      color: #0078d7;
+    }
+    .ourText {
+      color: #0078d7;
+    }
+    .ourContent {
+      opacity: 1;
+    }
+  }
+}
+
+.ourContent {
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  transition: all 0.3s;
+  background-image: url('../../../public//assets//images/ourHoverImg.png');
+  z-index: 100;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+.ourTitle {
+  margin-top: 1rem;
+  margin-bottom: 0.125rem;
+  transition: all 0.3s;
+  @include text-styles($size: 1.5rem, $weight: 500, $height: 2rem);
+}
+.ourText {
+  color: #eaeaea;
+  transition: all 0.3s;
+  @include text-styles($size: 1.125rem, $weight: 500, $height: 1.175rem);
+}
+.ourSwiperImg {
+  cursor: pointer;
+  transition: all 0.3s;
+  max-width: 23.25rem;
+  width: 100%;
+  z-index: -1;
+}

@@ -12,6 +12,7 @@
   @include flex($x: center, $y: space-between);
 }
 .footerText {
+  margin-top: 2.5rem;
   margin-bottom: 0.5rem;
   @include text-styles($height: 1.5rem, $size: 1rem);
   color: $secondary-text;
@@ -57,12 +58,18 @@
     text-align: center;
   }
 }
+@media (max-width: 992px) {
+  .footerText {
+    margin-top: 1.5rem;
+  }
+}
 @media (max-width: 578px) {
   .footerLink {
     margin-right: 1.75rem;
-    @include text-styles($height: 1.20rem, $weight: 500, $size: 0.60rem);
+    @include text-styles($height: 1.2rem, $weight: 500, $size: 0.6rem);
   }
   .footerText {
+    margin-top: 1rem;
     @include text-styles($height: 1.1rem, $size: 0.5rem);
   }
   .footerTextBottom {
