@@ -1,0 +1,91 @@
+@import '@/styles/common';
+.projectInfo {
+  margin-top: 8rem;
+  @include flex($x: center, $y: space-between);
+}
+.projectInfoInner {
+  max-width: 46rem;
+  width: 100%;
+}
+.projectTitle {
+  margin-bottom: 1rem;
+  @include text-styles($size: 2.5rem, $weight: 700, $height: 3rem);
+}
+.projectText {
+  @include text-styles($size: 1.5rem, $weight: 400, $height: 2rem);
+}
+.projectPartners {
+  margin-top: 3.75rem;
+  border-radius: 2.5rem;
+  padding: 3.5rem;
+  background-color: #282828;
+}
+.projectPartners {
+  @include flex($x: center, $y: space-between);
+}
+.sketchImg {
+  margin-right: 1.5rem;
+  max-width: 30.1rem;
+  width: 100%;
+}
+.sketch {
+  margin-top: 6rem;
+}
+.sketchText {
+  margin-bottom: 2rem;
+  @include text-styles($size: 1rem, $weight: 400, $height: 1.5rem);
+  color: #8c8c8c;
+}
+.cardInner {
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+  display: grid;
+  gap: 3.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(14.5rem, 1fr));
+}
+.googleApps {
+  position: relative;
+  padding: 2rem 0;
+  margin-bottom: 7.5rem;
+  background-color: $card-bg;
+}
+.googleAppsInner {
+  max-width: 70rem;
+  width: 100%;
+  margin: 0 auto;
+  @include flex($x: center, $y: space-between);
+}
+
+.appsInfo {
+  max-width: 36rem;
+  width: 100%;
+}
+.infoText {
+  @include text-styles($size: 1.5rem, $weight: 400, $height: 2rem);
+}
+.socials {
+  margin-top: 2rem;
+  @include flex($x: center);
+}
+.socialsImg {
+  padding: 0.635rem 2rem;
+  cursor: pointer;
+  background-color: #0078d7;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+.leftCorner {
+  position: absolute;
+}
+.rightCorner {
+  top: 5%;
+  right: 0;
+  position: absolute;
+}
+.ourSwiper {
+  margin-bottom: 8rem;
+}
+.ourSwiperTitle {
+  margin-bottom: 2.5rem;
+  @include text-styles($size: 2.5rem, $weight: 700, $height: 3rem);
+}

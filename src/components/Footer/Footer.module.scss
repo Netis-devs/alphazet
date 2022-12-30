@@ -1,0 +1,78 @@
+@import '@/styles/common';
+@import '@/styles/variables';
+
+.footer {
+  padding: 5rem 0;
+  background-color: $footer-bg-color;
+}
+.footerTop {
+  @include flex($x: center, $y: space-between);
+}
+.footerBottom {
+  @include flex($x: center, $y: space-between);
+}
+.footerText {
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+  @include text-styles($height: 1.5rem, $size: 1rem);
+  color: $secondary-text;
+}
+.footerLink {
+  margin-right: 2.5rem;
+  @include text-styles($height: 2rem, $weight: 600, $size: 1.5rem);
+  color: $text-color;
+}
+.footerTextBottom {
+  margin-top: 4.375rem;
+  @include text-styles($height: 1.5rem, $size: 1rem);
+  color: $secondary-text;
+}
+.footerInfo {
+  max-width: 650px;
+  width: 100%;
+}
+@media (max-width: 1400px) {
+  .footerLink {
+    margin-right: 2rem;
+    @include text-styles($height: 1.75rem, $weight: 500, $size: 1.25rem);
+  }
+}
+@media (max-width: 1200px) {
+  .footer {
+    padding: 2.5rem 0;
+  }
+  .footerTop {
+    @include flex($x: center, $y: center, $direction: column);
+  }
+  .footerBottom {
+    @include flex($x: center, $y: center, $direction: column);
+  }
+  .footerText {
+    text-align: center;
+  }
+  .footerTextBottom {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .footerLinks {
+    text-align: center;
+  }
+}
+@media (max-width: 992px) {
+  .footerText {
+    margin-top: 1.5rem;
+  }
+}
+@media (max-width: 578px) {
+  .footerLink {
+    margin-right: 1.75rem;
+    @include text-styles($height: 1.2rem, $weight: 500, $size: 0.6rem);
+  }
+  .footerText {
+    margin-top: 1rem;
+    @include text-styles($height: 1.1rem, $size: 0.5rem);
+  }
+  .footerTextBottom {
+    @include text-styles($height: 1.1rem, $size: 0.6rem);
+  }
+}

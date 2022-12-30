@@ -1,0 +1,94 @@
+@import '@/styles/common';
+
+.aboutView {
+  padding-top: 5rem;
+  margin-bottom: 6rem;
+}
+.aboutTitle {
+  margin-top: 6rem;
+  @include text-styles($size: 2.5rem, $weight: 500, $height: 3rem);
+  max-width: 52rem;
+  width: 100%;
+}
+.aboutInfo {
+  z-index: 1;
+  margin-top: 7.5rem;
+}
+.aboutText {
+  margin-bottom: 3rem;
+  @include text-styles($size: 2rem, $weight: 400, $height: 2.5rem);
+  @include flex($x: center);
+  max-width: 62rem;
+  width: 100%;
+}
+.aboutText::before {
+  margin-right: 1rem;
+  content: '';
+  width: 1.25rem;
+  height: 1.25rem;
+  background-image: url('../../../public/assets/images/aboutImg.png');
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.aboutTriangle {
+  z-index: -1;
+  position: fixed;
+  max-width: 69rem;
+  max-height: 105rem;
+  height: 100%;
+  width: 100%;
+  background-image: url('../../../public/assets/images/triangleImg.png');
+  background-repeat: no-repeat;
+  display: block;
+}
+.teamVideo {
+  margin-top: 9.375rem;
+  margin-right: 8.125rem;
+  @include flex($x: center, $y: end);
+}
+.videoImg {
+  max-width: 56.25rem;
+  width: 100%;
+  max-height: 32.375rem;
+  height: 100%;
+}
+.contactTitle {
+  @include text-styles($size: 2.5rem, $weight: 700, $height: 3rem);
+}
+.aboutContactInner {
+  @include flex($x: center, $y: space-between);
+}
+.contactText {
+  margin-bottom: 0.5rem;
+  color: $secondary-text;
+  @include text-styles($size: 1rem, $weight: 400, $height: 1.5rem);
+}
+.contactNumber {
+  @include text-styles($size: 1.5rem, $weight: 600, $height: 2rem);
+}
+.textRight {
+  margin-left: 2.75rem;
+}
+.mapImg {
+  margin: 2rem 0;
+  border-radius: 1rem;
+}
+.aboutProjects {
+  margin: 2rem 0;
+}
+.ourComandSwiper {
+  margin-bottom: 5rem;
+}
+.partners {
+  margin: 2rem 0;
+  display: grid;
+  gap: 1.375rem;
+  grid-template-columns: repeat(auto-fit, minmax(14.5rem, 1fr));
+}
+.contactSecondTitle {
+  margin-bottom: 2.5rem;
+}
+.reviewSwiper {
+  margin-bottom: 5rem;
+}

@@ -1,0 +1,62 @@
+@import '@/styles/common';
+
+.projectCard {
+  position: relative;
+  // max-width: 46.75rem;
+  // width: 100%;
+  border-radius: 1.25rem;
+  height: 29.25rem;
+  z-index: 99;
+
+  &:hover {
+    .shadow {
+      opacity: 1;
+      z-index: 99;
+    }
+  }
+}
+.projectButton {
+  position: absolute;
+  top: 2.25rem;
+  left: 3rem;
+}
+.projectInfo {
+  position: absolute;
+  bottom: 2.25rem;
+  left: 3rem;
+}
+.projectTitle {
+  z-index: 1000;
+  @include text-styles($height: 2.5rem, $weight: 600, $size: 2.25rem);
+}
+.projectText {
+  @include text-styles($height: 1.25rem, $weight: 400, $size: 1.75rem);
+}
+
+.card__img {
+  position: absolute;
+  object-fit: cover;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.25rem;
+}
+
+.shadow {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  border-radius: 1.25rem;
+  opacity: 0;
+  transition: opacity $transition-duration linear;
+  background: linear-gradient(180deg, rgba(84, 165, 228, 0) 0%, #005599 100%);
+}
+@media (max-width: 768px) {
+  .projectCard {
+    max-width: 43rem;
+    width: 100%;
+  }
+}
