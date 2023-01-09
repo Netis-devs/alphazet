@@ -30,6 +30,10 @@
   max-width: 650px;
   width: 100%;
 }
+
+.footerMarginBottom {
+  margin-bottom: 2.5rem;
+}
 @media (max-width: 1400px) {
   .footerLink {
     margin-right: 2rem;
@@ -46,7 +50,11 @@
   .footerBottom {
     @include flex($x: center, $y: center, $direction: column);
   }
+  .footerMarginBottom {
+    margin-bottom: 0;
+  }
   .footerText {
+    margin-top: 1.5rem;
     text-align: center;
   }
   .footerTextBottom {
@@ -60,9 +68,10 @@
 @media (max-width: 578px) {
   .footerLink {
     margin-right: 1.75rem;
-    @include text-styles($height: 1.20rem, $weight: 500, $size: 0.60rem);
+    @include text-styles($height: 1.2rem, $weight: 500, $size: 0.6rem);
   }
   .footerText {
+    margin-top: 1rem;
     @include text-styles($height: 1.1rem, $size: 0.5rem);
   }
   .footerTextBottom {

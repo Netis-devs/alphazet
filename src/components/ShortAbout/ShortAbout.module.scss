@@ -16,8 +16,6 @@
   width: 100%;
 }
 .videoStart {
-  width: 8.25rem;
-  height: 8.25rem;
   border-radius: 50%;
   cursor: pointer;
   position: absolute;
@@ -25,13 +23,17 @@
   left: 50%;
   transform: translate(-50%, -50%);
   & {
-    svg {
-      transition: all $transition-duration;
+    g {
+      width: 8.25rem;
+      height: 8.25rem;
+      circle {
+        transition: all $transition-duration;
+      }
     }
   }
 
-  &:hover {
-    g {
+  & {
+    g:hover {
       circle {
         fill: #005599;
       }

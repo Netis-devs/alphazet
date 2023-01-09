@@ -15,7 +15,9 @@ function Footer() {
               <p className={styles.footerText}>
                 Звоните или напишите для сотрудничество:
               </p>
-              <div className={styles.footerLinks}>
+              <div
+                className={`${styles.footerLinks} ${styles.footerMarginBottom}`}
+              >
                 <a className={styles.footerLink} href="tel:=998712024202">
                   +998 71 202-42-02
                 </a>
@@ -28,7 +30,9 @@ function Footer() {
               <p className={styles.footerText}>
                 Следите за нами в наших социальных сетях:
               </p>
-              <div className={styles.footerLinks}>
+              <div
+                className={`${styles.footerLinks} ${styles.footerMarginBottom}`}
+              >
                 <Link className={styles.footerLink} href="">
                   Telegram
                 </Link>
