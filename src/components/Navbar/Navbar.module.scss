@@ -1,0 +1,35 @@
+@import '@/styles/common';
+.nav {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+.navbar {
+  padding: 0.75rem 0;
+
+  @include flex($x: center, $y: space-between);
+}
+.navbarList {
+  @include flex($x: center, $y: space-between);
+}
+.navbarItem {
+  margin-right: 2.5rem;
+}
+.colorChange {
+  background: linear-gradient(
+    180deg,
+    rgba(27, 27, 27, 0.82) 63.26%,
+    rgba(27, 27, 27, 0) 99.34%
+  );
+}
+.navbarLogo{
+  cursor: pointer;
+}
+.navbarLink {
+  transition: all $transition-duration;
+  @include text-styles($height: 1.625rem, $size: 1.125rem);
+  color: $secondary-text;
+  &:hover {
+    color: $text-color;
+  }
+}

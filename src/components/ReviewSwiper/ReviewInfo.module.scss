@@ -1,0 +1,32 @@
+@import '@/styles/common';
+.slider {
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 3.75rem 5rem 3.75rem 4rem;
+  width: 72.75rem;
+  background-color: $navbar-bg;
+  @include flex($x: center, $y: space-between);
+}
+.swiperInfo {
+  z-index: 1;
+  margin-left: 5rem;
+}
+.sliderText {
+  margin-bottom: 3.25rem;
+  @include text-styles($size: 1.5rem, $weight: 400, $height: 2rem);
+}
+.swiperTitle {
+  margin-bottom: 0.125rem;
+  @include text-styles($size: 1.25rem, $weight: 400, $height: 1.75rem);
+}
+.swiperSvg {
+  position: absolute;
+  top: 5.75rem;
+  left: 28.5rem;
+  max-width: 6.25rem;
+  width: 1000%;
+}
+.positionWork {
+  color: #b5b5b5;
+  @include text-styles($size: 1.25rem, $weight: 400, $height: 1.75rem);
+}

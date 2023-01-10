@@ -1,0 +1,16 @@
+@import '@/styles/variables';
+
+@mixin flex($x: flex-start, $y: flex-start, $direction: row, $gap: 0) {
+  display: flex;
+  justify-content: $y;
+  align-items: $x;
+  flex-direction: $direction;
+  gap: $gap;
+}
+@mixin text-styles($size: 1rem, $weight: 400, $height: null) {
+  font-size: $size;
+  font-weight: $weight;
+  @if $height {
+    line-height: $height;
+  }
+}

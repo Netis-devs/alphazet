@@ -1,0 +1,121 @@
+@import '@/styles/common';
+.shortHeading {
+  margin-top: 4rem;
+  margin-bottom: 2.25rem;
+  @include text-styles($size: 2.25rem, $weight: 700, $height: 2.625rem);
+}
+.shortInner {
+  @include flex($x: center, $y: space-between);
+  gap: 2.5rem;
+}
+.videoContent {
+  position: relative;
+}
+.shortImg {
+  max-width: 41rem;
+  width: 100%;
+}
+.videoStart {
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  & {
+    g {
+      width: 8.25rem;
+      height: 8.25rem;
+      circle {
+        transition: all $transition-duration;
+      }
+    }
+  }
+
+  & {
+    g:hover {
+      circle {
+        fill: #005599;
+      }
+    }
+  }
+}
+.shortImages {
+  margin-bottom: 2.25rem;
+  max-width: 34.75rem;
+  width: 100%;
+  @include flex($x: center, $y: space-between);
+}
+.shortRight {
+  max-width: 41.25rem;
+  width: 100%;
+}
+.shortText {
+  margin-bottom: 1.313rem;
+  color: #8c8c8c;
+  @include text-styles($size: 1rem, $weight: 500, $height: 1.5rem);
+}
+.shortSecondText {
+  color: $text-color;
+  @include text-styles($size: 1.25rem, $weight: 500, $height: 1.75rem);
+}
+.shortBtn {
+  margin-top: 3rem;
+}
+.shortSvg {
+  max-width: 160px;
+  width: 100%;
+  max-height: 2.625rem;
+  height: 100%;
+}
+@media (max-width: 1400px) {
+  .shortImg {
+    max-width: 35.75rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .videoContent {
+    max-width: 70rem;
+    max-height: 27.5rem;
+    height: 100%;
+    width: 100%;
+  }
+  .shortImg {
+    max-width: 70rem;
+    max-height: 27.5rem;
+    height: 100%;
+    width: 100%;
+  }
+  .shortInner {
+    @include flex($x: start, $direction: column, $y: space-between);
+    gap: 2.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .shortHeading {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    @include text-styles($size: 1.5rem, $weight: 700, $height: 2rem);
+  }
+  .shortText {
+    margin-bottom: 1rem;
+    @include text-styles($size: 0.75rem, $weight: 500, $height: 1.25rem);
+  }
+  .shortSecondText {
+    @include text-styles($size: 0.85rem, $weight: 500, $height: 1.5rem);
+  }
+  .shortImages {
+    margin-bottom: 1.5rem;
+  }
+  .shortBtn {
+    max-width: 200px;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .shortSvg {
+    max-height: 1.85rem;
+    height: 100%;
+  }
+}
