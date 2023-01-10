@@ -1,0 +1,20 @@
+@import '@/styles/common';
+@import '@/styles/variables';
+
+$padding-list: (
+  'sm': 0 1.875rem,
+  'md': 0 2.25rem,
+  'lg': 0 1.75rem,
+  'xl': 0 2.625rem,
+  'xxl': 0 3.25rem,
+);
+
+.row {
+  width: 100%;
+  @include set-property($value-list: $padding-list, $property: padding);
+}
+.container {
+  max-width: $container-max-width;
+  width: 100%;
+  margin: 0 auto;
+}

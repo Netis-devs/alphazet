@@ -1,0 +1,45 @@
+@import '@/styles/common';
+
+.baseStyles {
+  @include flex($x: center, $y: center);
+  &.socials {
+    padding: 0.75rem;
+    width: 2.75rem;
+    height: 2.75rem;
+
+    background-color: $partner-button;
+    border-radius: $border-radius;
+    transition: all $transition-duration;
+    &:hover {
+      background-color: $partner-button-hover;
+    }
+  }
+
+  &.partners {
+    // max-width: 10.5rem;
+    // width: 100%;
+    padding: 1.25rem 4.375rem;
+    background-color: $partner-button;
+    border-radius: 0.75rem;
+    transition: all $transition-duration;
+    &:hover {
+      background-color: $partner-button-hover;
+    }
+  }
+
+  &.analize {
+    width: 5.25rem;
+    height: 5.25rem;
+    box-shadow: 0px 0px 0.75rem 0.188rem rgba(123, 123, 123, 0.25);
+    padding: 0.625rem;
+    background-color: $text-color;
+    border-radius: 1.25rem;
+  }
+}
+@media (max-width:576px){
+  .baseStyles{
+    &.partners{
+      padding: 1rem 4rem;
+    }
+  }
+}
