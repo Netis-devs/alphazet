@@ -10,7 +10,7 @@ import ShortAbout from '@/components/ShortAbout/ShortAbout';
 import Container from '@/components/Container';
 
 import video from '@/assets/images/hero-video-bg.png';
-import videoGif from '@/assets/images/videoGif.gif';
+// import videoGif from '@/assets/images/videoGif.gif';
 import TelegramSVG from '@/assets/icons/telegram.svg';
 import InstagramSVG from '@/assets/icons/instagram.svg';
 import YouTubeSVG from '@/assets/icons/youtube.svg';
@@ -44,42 +44,46 @@ function HomeView() {
     <div>
       <Header src={video} alt="egeg">
         <div className={styles.headerCenter}>
-          <div className={styles.headerFlex}>
-            <h1 className={styles.headerTitle}>
-              Мы поможем вам выполнить все виды ИТ-проектов
-            </h1>
-            <div>
-              {socialIcons.map((item) => {
-                const { Element, id } = item;
-                return (
-                  <IconButton
-                    key={id}
-                    className={styles.headerSocials}
-                    as="a"
-                    href="/"
-                    variant="socials"
-                  >
-                    <Element />
-                  </IconButton>
-                );
-              })}
+          <Container>
+            <div className={styles.headerFlex}>
+              <h1 className={styles.headerTitle}>
+                Мы поможем вам выполнить все виды ИТ-проектов
+              </h1>
+              <div>
+                {socialIcons.map((item) => {
+                  const { Element, id } = item;
+                  return (
+                    <IconButton
+                      key={id}
+                      className={styles.headerSocials}
+                      as="a"
+                      href="/"
+                      variant="socials"
+                    >
+                      <Element />
+                    </IconButton>
+                  );
+                })}
+              </div>
             </div>
-          </div>
+          </Container>
         </div>
         <div className={styles.headerBottom}>
           <div>
-            <ul className={styles.headerLink}>
-              <li>
-                <a className={styles.headerLinks} href="tel:998909039799">
-                  +998 90 903-97-99
-                </a>
-              </li>
-              <li>
-                <a className={styles.headerLinks} href="#">
-                  support@alphazet.uz
-                </a>
-              </li>
-            </ul>
+            <Container>
+              <ul className={styles.headerLink}>
+                <li>
+                  <a className={styles.headerLinks} href="tel:998909039799">
+                    +998 90 903-97-99
+                  </a>
+                </li>
+                <li>
+                  <a className={styles.headerLinks} href="#">
+                    support@alphazet.uz
+                  </a>
+                </li>
+              </ul>
+            </Container>
           </div>
         </div>
       </Header>

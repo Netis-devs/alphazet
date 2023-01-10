@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import { Swiper, SwiperSlide } from '@/components/Slider/Swiper';
 
@@ -8,47 +8,57 @@ const Slider = (props) => {
     autoplay,
     pagination,
     children,
-    swiperInit,
-    onInit,
-    previousSlideButtonRef,
-    nextSlideButtonRef,
+    // swiperInit,
+    // onInit,
+    // previousSlideButtonRef,
+    // nextSlideButtonRef,
     slidesPerView,
     spaceBetween,
     centeredSlides,
     ...rest
   } = props;
+  const previousSlideButtonRef = useRef(null);
+  const nextSlideButtonRef = useRef(null);
 
-  const [swiper, setSwiper] = useState(() => swiperInit || null);
-  const handleSwiperInit = (swiper) => {
-    return typeof onInit === 'function' ? onInit(swiper) : setSwiper(swiper);
-  };
-  useEffect(() => {
-    if (swiper) {
-      swiper.params.navigation.prevEl = previousSlideButtonRef;
-      swiper.params.navigation.nextEl = nextSlideButtonRef;
-    }
-  }, [nextSlideButtonRef, previousSlideButtonRef, swiper]);
+  // const [swiper, setSwiper] = useState(() => swiperInit || null);
+  // const handleSwiperInit = (swiper) => {
+  //   return typeof onInit === 'function' ? onInit(swiper) : setSwiper(swiper);
+  // };
+  // useEffect(() => {
+  //   if (swiper) {
+  //     swiper.params.navigation.prevEl = previousSlideButtonRef;
+  //     swiper.params.navigation.nextEl = nextSlideButtonRef;
+  //   }
+  // }, [nextSlideButtonRef, previousSlideButtonRef, swiper]);
 
   return (
-    <Swiper
-      loop={loop}
-      wrapperTag="ul"
-      autoplay={autoplay}
-      slidesPerView={slidesPerView}
-      spaceBetween={spaceBetween}
-      centeredSlides={centeredSlides}
-      navigation={{
-        prevEl: previousSlideButtonRef,
-        nextEl: nextSlideButtonRef,
-      }}
-      pagination={pagination}
-      onInit={handleSwiperInit}
-      {...rest}
-    >
-      {React.Children.map(children, (child) => (
-        <SwiperSlide tag="li">{child}</SwiperSlide>
-      ))}
-    </Swiper>
+    <div>
+      <button ref={nextSlideButtonRef}>next</button>
+      <button ref={previousSlideButtonRef}>previous</button>
+      <Swiper
+        loop={loop}
+        wrapperTag="ul"
+        autoplay={autoplay}
+        slidesPerView={slidesPerView}
+        spaceBetween={spaceBetween}
+        centeredSlides={centeredSlides}
+        navigation={{
+          prevEl: previousSlideButtonRef.current,
+          nextEl: nextSlideButtonRef.current,
+        }}
+        pagination={pagination}
+        // onInit={handleSwiperInit}
+        onBeforeInit={(swiper) => {
+          swiper.params.navigation.prevEl = previousSlideButtonRef.current;
+          swiper.params.navigation.nextEl = nextSlideButtonRef.current;
+        }}
+        {...rest}
+      >
+        {React.Children.map(children, (child) => (
+          <SwiperSlide tag="li">{child}</SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 };
 

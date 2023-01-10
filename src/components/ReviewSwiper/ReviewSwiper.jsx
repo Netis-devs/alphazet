@@ -63,8 +63,6 @@ const HomeSwiper = () => {
           <SwiperInfo key={slide.id} slide={slide} />
         ))}
       </Slider>
-
-      <button className="next">next</button>
     </div>
   );
 };

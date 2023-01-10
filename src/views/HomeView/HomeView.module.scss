@@ -72,7 +72,11 @@
   gap: 1.375rem;
   grid-template-columns: repeat(auto-fit, minmax(14.5rem, 1fr));
 }
-
+@media (max-width: 1600px) {
+  .headerTitle {
+    @include text-styles($size: 4rem, $weight: 700, $height: 4.5rem);
+  }
+}
 @media (max-width: 576px) {
   .card {
     margin: 3.25rem 0;
@@ -90,7 +94,7 @@
     @include text-styles($size: 1.5rem, $weight: 700, $height: 2rem);
   }
 }
-@media (max-width: 576px){
+@media (max-width: 576px) {
   .partners {
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(8.25rem, 1fr));
