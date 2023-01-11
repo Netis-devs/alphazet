@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Icon from '@/icons';
 
 import Container from '@/components/Container/Container';
 import Button from '@/components/Buttons/Button';
@@ -7,7 +8,6 @@ import videoImg from '@/assets/images/video.png';
 import StaysSvg from '@/assets/icons/stays.svg';
 import ItvSvg from '@/assets/icons/itv.svg';
 import TransportSvg from '@/assets/icons/transport.svg';
-import VideoStartSvg from '@/assets/icons/videoStart.svg';
 
 import styles from '@/components/ShortAbout/ShortAbout.module.scss';
 
@@ -24,7 +24,7 @@ const ShortAbout = () => {
               alt="videoImg"
             ></Image>
             <div className={styles.videoStart}>
-              <VideoStartSvg className={styles.videoPlay} />
+              <Icon icon="play" size="24" className={styles.videoPlay} />
             </div>
           </div>
           <div className={styles.shortRight}>

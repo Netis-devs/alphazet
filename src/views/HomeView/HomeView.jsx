@@ -11,7 +11,6 @@ import ShortAbout from '@/components/ShortAbout/ShortAbout';
 import Container from '@/components/Container/Container';
 
 import video from '@/assets/images/hero-video-bg.png';
-// import videoGif from '@/assets/images/videoGif.gif';
 import TelegramSVG from '@/assets/icons/telegram.svg';
 import InstagramSVG from '@/assets/icons/instagram.svg';
 import YouTubeSVG from '@/assets/icons/youtube.svg';
