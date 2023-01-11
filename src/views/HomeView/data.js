@@ -4,7 +4,7 @@ import card3 from '@/assets/images/card3.png';
 import card4 from '@/assets/images/card4.png';
 import card5 from '@/assets/images/card5.png';
 import cardProject from '@/assets/images/cards-project.png';
-import Apelsin from '@/assets/icons/apelsin.png';
+import Apelsin from '@/assets/icons/apelsin.svg';
 
 import TelegramSVG from '@/assets/icons/telegram.svg';
 import InstagramSVG from '@/assets/icons/instagram.svg';
@@ -90,75 +90,75 @@ export const projectCards = [
 export const iconButton = [
   {
     id: 1,
-    src: Apelsin,
+    Src: Apelsin,
   },
   {
     id: 2,
-    src: Apelsin,
+    Src: Apelsin,
   },
   {
     id: 3,
-    src: Apelsin,
+    Src: Apelsin,
   },
   {
     id: 4,
-    src: Apelsin,
+    Src: Apelsin,
   },
   {
     id: 5,
-    src: Apelsin,
+    Src: Apelsin,
   },
   {
     id: 6,
-    src: Apelsin,
+    Src: Apelsin,
   },
   {
     id: 7,
-    src: Apelsin,
+    Src: Apelsin,
   },
   {
     id: 8,
-    src: Apelsin,
+    Src: Apelsin,
   },
   {
     id: 9,
-    src: Apelsin,
+    Src: Apelsin,
   },
   {
     id: 10,
-    src: Apelsin,
+    Src: Apelsin,
   },
   {
     id: 11,
-    src: Apelsin,
+    Src: Apelsin,
   },
   {
     id: 12,
-    src: Apelsin,
+    Src: Apelsin,
   },
   {
     id: 13,
-    src: Apelsin,
+    Src: Apelsin,
   },
   {
     id: 14,
-    src: Apelsin,
+    Src: Apelsin,
   },
   {
     id: 15,
-    src: Apelsin,
+    Src: Apelsin,
   },
   {
     id: 16,
-    src: Apelsin,
+    Src: Apelsin,
   },
   {
     id: 17,
-    src: Apelsin,
+    Src: Apelsin,
   },
   {
     id: 18,
-    src: Apelsin,
+    Src: Apelsin,
   },
 ]; // it comes from backend like partners
 

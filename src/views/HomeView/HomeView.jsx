@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Icon from '@/icons';
 
 import IconButton from '@/components/Buttons/IconButton';
 import Button from '@/components/Buttons/Button';
@@ -103,14 +104,14 @@ function HomeView() {
         <div className={styles.projectCard}>
           <h2 className={styles.cardHeading}>Проекты</h2>
           <div className={styles.projectcardInner}>
-            {projectCards.map((item) => (
+            {projectCards.map((item) => {
               <ProjectCard
                 key={item.id}
                 href={item.href}
                 src={item.src}
                 alt={item.alt}
-              />
-            ))}
+              />;
+            })}
           </div>
           <Button
             className={styles.projectButton}
@@ -123,17 +124,20 @@ function HomeView() {
         <div className={styles.partner}>
           <h2 className={styles.cardHeading}>Партнёры</h2>
           <div className={styles.partners}>
-            {iconButton.map((item) => (
-              <IconButton
-                key={item.id}
-                className={styles.partnersCard}
-                as="a"
-                href="/"
-                variant="partners"
-              >
-                <Image src={item.src} alt="apelsin" width={100} height={27} />
-              </IconButton>
-            ))}
+            {iconButton.map((item) => {
+              const { id, Src } = item;
+              return (
+                <IconButton
+                  key={id}
+                  className={styles.partnersCard}
+                  as="a"
+                  href="/"
+                  variant="partners"
+                >
+                  <Src src={item.src} alt="apelsin" width={100} height={27} />
+                </IconButton>
+              );
+            })}
           </div>
         </div>
       </Container>
